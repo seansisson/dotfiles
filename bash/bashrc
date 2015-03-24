@@ -1,7 +1,8 @@
+# Sean Sisson
 # .bashrc
 
-# User specific aliases and functions
 
+# User specific aliases and functions
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -10,7 +11,7 @@ alias mv='mv -i'
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
+
 export PATH=/usr/pgsql-9.3/bin:$PATH
 alias vi=vim
 export EDITOR=vim
-alias mail=alpine
