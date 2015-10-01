@@ -1,0 +1,12 @@
+[push]
+	default = simple
+[core]
+	editor = vim
+[user]
+	name = Sean S
+	email = sisson@pdx.edu
+[pull]
+	rebase = true
+[color]
+	ui = auto
+	status = true
