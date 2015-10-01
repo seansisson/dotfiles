@@ -1,6 +1,4 @@
-# Sean Sisson
 # .bashrc
-
 
 # User specific aliases and functions
 alias rm='rm -i'
@@ -12,6 +10,16 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-export PATH=/usr/pgsql-9.3/bin:$PATH
+# Common Aliases
 alias vi=vim
+alias lsl="ls -la"
+alias l="ls -l"
+alias sl="ls"
+
 export EDITOR=vim
+export TERM=xterm-256color
+source ~/.git-prompt.sh
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
+# added by travis gem
+[ -f /root/.travis/travis.sh ] && source /root/.travis/travis.sh
