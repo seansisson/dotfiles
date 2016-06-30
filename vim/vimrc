@@ -14,9 +14,9 @@ set backspace=indent,eol,start
 
 """ custom settings by Sean
 set background=dark
+set cursorline
 set nu
 set term=xterm-256color
-set mouse=a
 set hlsearch
 set mousehide
 set clipboard+=unnamed
@@ -32,11 +32,7 @@ endif
 "let g:mirodark_enable_higher_contrast_mode=1
 let g:mirodark_disable_color_approximation=1
 let t_Co=256
-try
-    colorscheme wombat256mod.transparent
-catch
-    colorscheme wombat256mod
-endtry
+colorscheme wombat256mod
 
 
 set nowrap
