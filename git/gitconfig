@@ -1,12 +1,17 @@
-[push]
-	default = simple
 [core]
 	editor = vim
 [user]
-	name = Sean S
 	email = sisson@pdx.edu
+[push]
+	default = simple
 [pull]
 	rebase = true
+[alias]
+	word-diff = diff --word-diff
+	stats = shortlog -s -n --all
+	graph1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	graph2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	graph = !"git graph2"
 [color]
 	ui = auto
 	status = true
