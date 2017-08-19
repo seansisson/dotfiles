@@ -14,7 +14,6 @@ fi
 alias vi=vim
 alias lsl="ls -la"
 alias l="ls -l"
-alias sl="ls"
 
 # Terminal customizations
 export EDITOR=vim
